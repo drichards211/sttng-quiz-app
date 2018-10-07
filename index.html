@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Trek: The Next Generation--Officers' Exam</title>
+  <meta name="description" content="Quiz game based on Star Trek: The Next Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Normalize.css, cross-browser reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css"/>
+  <!-- Main style sheet -->
+  <link rel="stylesheet" href="./index.css"/>
+  <!-- LCARS, Star Trek: TNG specific styling -->
+  <link rel="stylesheet" href="./lcars.css"/>
+</head>
+<body>
+	<div class="lcars-app-container">
+
+		<!-- HEADER =================================================== -->
+
+		<header id="header" class="lcars-row header" role="banner">
+
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-bottom"></div>
+
+			<!-- BAR WITH TITLE -->
+			<div class="lcars-bar horizontal">
+				<div class="lcars-title right lcars-atomic-tangerine-color">OFFICERS' EXAM</div>
+			</div>
+
+			<!-- ROUNDED EDGE DECORATED -->
+			<div class="lcars-bar horizontal right-end decorated lcars-pale-canary-bg"></div>
+
+		</header>
+
+		<!-- SIDE MENU ================================================= -->
+
+		<div id="left-menu" class="lcars-column start-space lcars-u-1">
+
+			<!-- FILLER -->
+			<div class="lcars-bar-0 lcars-u-1"></div>
+			<div class="lcars-bar-1 lcars-u-1"></div>
+			<div class="lcars-bar-2 lcars-u-1"></div>
+			<div class="lcars-bar-3 lcars-u-1"></div>
+		</div>
+
+		<!-- FOOTER ==================================================== -->
+
+		<div id="footer" class="lcars-row">
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-top start-space lcars-indigo-bg"></div>
+			<!-- BAR -->
+			<div class="lcars-bar horizontal both-divider bottom lcars-indigo-bg"></div>
+			<!-- ROUNDED EDGE -->
+			<div class="lcars-bar horizontal right-end decorated left-divider bottom lcars-melrose-bg"></div>
+		</div>
+
+		<!-- MAIN CONTAINER ============================================= -->
+		<main id="container" role="main">
+			<!-- COLUMN LAYOUT -->
+			<div class="exam-container">
+					<h1>STAR TREK:<br>THE NEXT GENERATION</h1>
+					<h2>DO YOU HAVE WHAT IT TAKES TO BECOME A STARFLEET ADMIRAL?<br>TAKE THE OFFICERS' EXAM AND FIND OUT</h2>
+					<form class="question-box">
+						<button type="button" class="button-start lcars-element button rounded">START</button>
+					</form>
+      </div>
+      <div class="image-container">
+				<div class="score-box"></div>
+				<div class="img-box"></div>
+			</div>
+		</main>
+		
+	  <!-- Local JavaScript files and remote jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="quizdata.js"></script>			
+	</div>
+</body>
+</html>
