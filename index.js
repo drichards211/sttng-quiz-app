@@ -46,7 +46,7 @@ let score = {
 function formatQuestion() {
   //Returns formatted questions (and answer buttons):
   return `<div class="question-number-answer">
-      <p class="question-number">QUESTION ${questionNum+1}/10</p>
+      <h1 class="question-number">QUESTION ${questionNum+1}/10</h1>
     </div>
     <form class="question-box">
       <fieldset>
@@ -64,7 +64,7 @@ function formatQuestion() {
 function formatAnswer() {
   //Returns formatted answers:
   return `<div class="question-number-answer">
-      <p class="question-number">QUESTION ${questionNum+1}/10</p>
+      <h1 class="question-number">QUESTION ${questionNum+1}/10</h1>
       <div class="answer-type"></div>
     </div>
     <p class="answer">${questions[questionNum].answerTxt.toUpperCase()}</p>
@@ -146,10 +146,10 @@ function renderAnswer(answer) {
   $('.sb-content').html(`<p class="score">SCORE ${score.points}/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">${score.pipsImg()}</p>`)
   //Render CORRECT or INCORRECT message:
   if (answer === "correct") {
-    $('.answer-type').html('<p class="correct fade_in" style="display:none">CORRECT</p>')
+    $('.answer-type').html('<h2 class="correct fade_in" style="display:none">CORRECT</h2>')
     fadeIn()
   } else {
-    $('.answer-type').html('<p class="incorrect blink_me" style="display:none">INCORRECT</p>')
+    $('.answer-type').html('<h2 class="incorrect blink_me" style="display:none">INCORRECT</h2>')
     blink()
   }
   //Render NEXT button if more questions available, else render RESULTS button:
