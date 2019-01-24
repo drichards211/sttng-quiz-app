@@ -1,7 +1,7 @@
 const questions = [
   {
     arrItem: 0, /* The "arrItem" keys aren't actually needed. They're here for human convenience. */
-    question: "In \"The Arsenal Of Freedom,\" a newer, better war machine appears every _____ minutes to attack the away team.",
+    question: "In \"The Arsenal Of Freedom,\" a newer, better war machine appears every \"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\" minutes to attack the away team.",
     answers: ["15", "12", "20", "22"], 
     correctAnswerIndex: "1",
     answerTxt: "The machines are released at intervals of precisely <span class='inline-answer'>12</span> minutes. They learn from each encounter and improve themselves; the perfect killing system.",
@@ -12,7 +12,7 @@ const questions = [
   },
   {
     arrItem: 1,
-    question: "In \"Q Who\", newly-arrived Ensign Sonya Gomez spills a cup of _________ on Captain Picard.",
+    question: "In \"Q Who\", newly-arrived Ensign Sonya Gomez spills a cup of \"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\" on Captain Picard.",
     answers: ["Hot chocolate", "Tellarian tea", "Prune juice", "Papalla juice"],
     correctAnswerIndex: "0",
     answerTxt: "Ensign Gomez is mortified after spilling her cup of <span class='inline-answer'>hot chocolate</span> all over Captain Picard.",
@@ -34,7 +34,7 @@ const questions = [
   },
   {
     arrItem: 3,
-    question: "Two characters named One Zero and Zero One are members of the ________ race.",
+    question: "Two characters named One Zero and Zero One are members of the \"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\" race.",
     answers: ["Antican", "Benzite", "Pacifican", "Bynar"],
     correctAnswerIndex: "3",
     answerTxt: "In 2364, Starfleet employed the <span class='inline-answer'>Bynars</span> to perform computer upgrades to the USS Enterprise-D.",
