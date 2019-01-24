@@ -656,10 +656,10 @@ width: 7.5rem;
 box-sizing: border-box;
 padding-left: 0.75rem;
 padding-right: 0.75rem;
-display: inline-flex;
-flex-direction: row;
+/* display: inline-flex; */
+/* flex-direction: row; */
 justify-content: flex-end;
-align-items: flex-end;
+/* align-items: flex-end; */
 }
 .lcars-element * {
 margin: 0;
