@@ -234,53 +234,33 @@ instead of lcars.css in order to avoid some ":after" effects):
 }
 
 /*for-phone-landscape-up*/
-@media only screen and (min-width: 600px) and (orientation: landscape) { 
+@media only screen and (min-width: 600px) { 
   .exam-container, .image-container {
     width: 50%; 
-  }
-  html, body {
-    font-size: 15px;
-  }
-}
-
-  /*for-tablet-portrait-up*/
-@media only screen and (min-width: 600px) and (orientation: portrait) { 
-  html, body {
-    font-size: 18.5px;
-  }
-}
-
-/* Preserves larger font for unusual desktop window size */
-@media only screen and (min-width: 900px) and (orientation: landscape) {
-  html, body {
-    font-size: 18px;
   }
 }
 
 /* for-tablet-landscape-up */
 @media only screen and (min-width: 1000px) {
-  .exam-container, .image-container {
-    width: 50%; 
+  html, body {
+    font-size: 20px;
   }
   .question-number {
     margin-bottom: 1em;
   } 
-  html, body {
-    font-size: 20px;
-  }
 }
 
 /* for-desktop-up */
 @media only screen and (min-width: 1200px) {
+  html, body {
+    font-size: 20px;
+  }
   .question-number-answer, .question-box, .answer {
     max-width: 34vw;
     margin-left: auto;
   }
   .score-box, .img-box {
     max-width: 34vw;
-  }
-  html, body {
-    font-size: 20px;
   }
 }
 
