@@ -81,10 +81,10 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .img-box {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   box-sizing: border-box;
-  padding-top: 10%;
+  padding-top: 2.7em;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -235,10 +235,7 @@ instead of lcars.css in order to avoid some ":after" effects):
 
 /*for-phone-landscape-up*/
 @media only screen and (min-width: 600px) and (orientation: landscape) { 
-  .exam-container {
-    width: 50%; 
-  }
-  .image-container {
+  .exam-container, .image-container {
     width: 50%; 
   }
   html, body {
@@ -262,19 +259,12 @@ instead of lcars.css in order to avoid some ":after" effects):
 
 /* for-tablet-landscape-up */
 @media only screen and (min-width: 1000px) {
-   .exam-container {
-    width: 50%; 
-  }
-  .image-container {
+  .exam-container, .image-container {
     width: 50%; 
   }
   .question-number {
     margin-bottom: 1em;
   } 
-   .img-box {
-    margin-top: 2rem; 
-    padding-top: 0%;
-  }
   html, body {
     font-size: 20px;
   }
@@ -282,12 +272,12 @@ instead of lcars.css in order to avoid some ":after" effects):
 
 /* for-desktop-up */
 @media only screen and (min-width: 1200px) {
-  .image-container {
-    padding-right: 5%;
+  .question-number-answer, .question-box, .answer {
+    max-width: 34vw;
+    margin-left: auto;
   }
-   .img-box {
-    padding-top: 10%;
-    padding-right: 5%;
+  .score-box, .img-box {
+    max-width: 34vw;
   }
   html, body {
     font-size: 20px;
