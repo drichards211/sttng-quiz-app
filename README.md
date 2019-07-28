@@ -13,12 +13,12 @@ Upcoming features include sound effects for button clicks, correct and incorrect
 
 ## Style changes:
 * [ ] Improve LCARS font spacing, weight, and legibility.
-* [ ] Increase #container font-size on larger viewports.
-* [ ] Adjust padding on .img-box to match padding in other areas.
+* [X] Increase #container font-size on larger viewports.
+* [X] Adjust padding on .img-box to match padding in other areas.
 * [ ] Increase sidebar width on larger viewports.
-* [ ] Fixed side-bar element needs to be thinner on smaller viewports.
-* [ ] Font is too small on some viewports.
-* [ ] Smooth the transitioning between viewport sizes.
+* [X] Fixed side-bar element needs to be thinner on smaller viewports.
+* [X] Font is too small on some viewports.
+* [X] Smooth the transitioning between viewport sizes.
 
 ## a11y:
 * [ ] Increase contrast ratio to AA on all colored text.
