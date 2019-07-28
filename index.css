@@ -15,6 +15,7 @@ html, body {
 legend {
   padding: 0;
   display: table;
+  width: 100%; /* Required in Firefox for "text-align: right" to work inside legend */
   -webkit-padding-start: 0px;
   -webkit-padding-end: 0px;
 }
