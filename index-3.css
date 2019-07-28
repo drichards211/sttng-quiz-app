@@ -1,0 +1,302 @@
+@font-face {
+  font-family: LCARS;
+  src: url(tt0105m_.TTF);
+  font-style: normal;
+}
+
+html, body {
+  font-family: "LCARS";
+  color: #fff;
+  font-size: 15px;
+  background: black;
+}
+
+/*Removes all default browser styling for legends and fieldsets:*/
+legend {
+  padding: 0;
+  display: table;
+  width: 100%; /* Required in Firefox for "text-align: right" to work inside legend */
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+}
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+.exam-container {
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%; 
+  padding-bottom: 2.5rem;
+  padding-right: 3%;
+}
+
+.image-container {
+  float: left;
+  box-sizing: border-box;
+  text-align: right;
+  display: inline-flex; 
+  flex-direction: column;
+  width: 100%; 
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.clear { 
+  clear: both; 
+}
+
+.score-box {
+  box-sizing: border-box;
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
+}
+
+.sb-bracket {
+  box-sizing: border-box;
+}
+
+.sb-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: auto;
+}
+
+.score-pips, .rank {
+ float: right;
+}
+
+.pips-img {
+  height: 1em;
+  width: auto;
+}
+
+.img-box {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-top: 10%;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.image {
+  display: inline-block;
+  max-width: 90%;
+  max-height: 20em;
+}
+
+.question-number-answer {
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
+}
+
+.question-number {
+  margin-top: 0em !important;
+  margin-bottom: .75em;
+  font-size: 195%;
+}
+
+.question {
+  font-size: 1.4rem;
+  margin-top: 0.1em;
+  margin-bottom: 1.5em;
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
+}
+
+.question-box {
+  margin-top: 0em;
+}
+
+.congrats {
+  margin-top: 0.1em !important;
+}
+
+.correct {
+  color: #36c !important; 
+  font-size: 195%; 
+  margin-top: 0em; 
+  margin-bottom: .1em;
+}
+
+.incorrect {
+  color: rgb(201, 17, 17) !important; 
+  font-size: 195%; 
+  margin-top: 0em; 
+  margin-bottom: .1em;
+}
+
+.INLINE-ANSWER {
+  color: #36c !important;
+}
+
+.dr-orange-text-color {
+  color: #FF9900 !important;
+}
+
+.dr-golden-arch-bg {
+  background-color: #FFCC99;
+}
+
+button {
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
+}
+
+.button-start {
+  margin-top: 1.6rem;
+}
+
+.button-next {
+  margin-top: 0.8rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.score-box p {
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+/*
+Additional LCARS classes, authored by D.R. (Stored in index.css 
+instead of lcars.css in order to avoid some ":after" effects):
+*/
+.lcars-bar-0 { /*DR*/
+  position: relative;
+  color: #000;
+  height: 10%;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  background-color: #ff9;
+}
+.lcars-bar-1 { /*DR*/
+  position: relative;
+  color: #000;
+  height: 40%;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  background-color: #f90;
+}
+.lcars-bar-2 { /*DR*/
+  position: relative;
+  color: #000;
+  height: 13%;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  background-color: #9cf;
+}
+.lcars-bar-3 { /*DR*/
+  position: relative;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  background-color: #99c;
+}
+.lcars-bar-4 { /*DR*/
+  position: relative;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  background-color: #99c;
+}
+.lcars-u-2-1-dr { /*DR*/
+  width: 14.25rem;
+  min-width: 14.25rem;
+  height: 3rem;
+  min-height: 3rem;
+}
+
+
+/*for-tiny-phone-only*/
+@media only screen and (max-width: 400px) {
+/* No special settings... uses defaults */
+}
+
+/*for-phone-landscape-up*/
+@media only screen and (min-width: 600px) and (orientation: landscape) { 
+  .exam-container {
+    width: 50%; 
+  }
+  .image-container {
+    width: 50%; 
+  }
+  html, body {
+    font-size: 15px;
+  }
+}
+
+  /*for-tablet-portrait-up*/
+@media only screen and (min-width: 600px) and (orientation: portrait) { 
+  html, body {
+    font-size: 18.5px;
+  }
+}
+
+/* Preserves larger font for unusual desktop window size */
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+  html, body {
+    font-size: 18px;
+  }
+}
+
+/* for-tablet-landscape-up */
+@media only screen and (min-width: 1000px) {
+   .exam-container {
+    width: 50%; 
+  }
+  .image-container {
+    width: 50%; 
+  }
+  .question-number {
+    margin-bottom: 1em;
+  } 
+   .img-box {
+    margin-top: 2rem; 
+    padding-top: 0%;
+  }
+  html, body {
+    font-size: 20px;
+  }
+}
+
+/* for-desktop-up */
+@media only screen and (min-width: 1200px) {
+  .image-container {
+    padding-right: 5%;
+  }
+   .img-box {
+    padding-top: 10%;
+    padding-right: 5%;
+  }
+  html, body {
+    font-size: 20px;
+  }
+}
+
+/* for-big-desktop-up */
+@media only screen and (min-width: 1800px) {
+  html, body {
+    font-size: 25px;
+  }
+}
