@@ -7,7 +7,7 @@
 html, body {
   font-family: "LCARS";
   color: #fff;
-  font-size: 10px;
+  font-size: 15px;
   background: black;
 }
 
@@ -242,7 +242,7 @@ instead of lcars.css in order to avoid some ":after" effects):
     width: 50%; 
   }
   html, body {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
