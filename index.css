@@ -227,11 +227,7 @@ instead of lcars.css in order to avoid some ":after" effects):
   min-height: 3rem;
 }
 
-
-/*for-tiny-phone-only*/
-@media only screen and (max-width: 400px) {
-/* No special settings... uses defaults */
-}
+/* MEDIA QUERIES ================================== */
 
 /*for-phone-landscape-up*/
 @media only screen and (min-width: 600px) { 
@@ -239,7 +235,6 @@ instead of lcars.css in order to avoid some ":after" effects):
     width: 50%; 
   }
 }
-
 /* for-tablet-landscape-up */
 @media only screen and (min-width: 1000px) {
   html, body {
@@ -249,7 +244,6 @@ instead of lcars.css in order to avoid some ":after" effects):
     margin-bottom: 1em;
   } 
 }
-
 /* for-desktop-up */
 @media only screen and (min-width: 1200px) {
   html, body {
@@ -263,7 +257,6 @@ instead of lcars.css in order to avoid some ":after" effects):
     max-width: 34vw;
   }
 }
-
 /* for-big-desktop-up */
 @media only screen and (min-width: 1800px) {
   html, body {

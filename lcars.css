@@ -1765,3 +1765,32 @@ width: 123.75rem;
 .lcars-u-16.half {
 width: 119.875rem;
 }
+
+/* DR MEDIA QUERIES ================================== */
+
+/* for-tablet-portrait-up */
+@media only screen and (min-width: 700px) and (orientation: portrait) {
+  .lcars-app-container #header, .lcars-app-container #left-menu, .lcars-app-container #footer {
+    font-size: 15px;
+  }
+  .lcars-app-container #container {
+    padding-left: 8.5em;
+    padding-top: 4.5em;
+  }
+  .lcars-column.start-space {
+    margin-top: 1em;
+  }
+}
+/* for-tablet-landscape-up */
+@media only screen and (min-width: 1000px) {
+  .lcars-app-container #header, .lcars-app-container #left-menu, .lcars-app-container #footer {
+    font-size: 20px;
+  }
+  .lcars-app-container #container {
+    padding-left: 8.5em;
+    padding-top: 4.5em;
+  }
+  .lcars-column.start-space {
+    margin-top: 1em;
+  }
+}
