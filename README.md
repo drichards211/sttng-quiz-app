@@ -22,4 +22,4 @@ Upcoming features include sound effects for button clicks, correct and incorrect
 
 ## a11y:
 * [ ] Increase contrast ratio to AA on all colored text.
-* [ ] Set letter-spacing to 0.025em consistently throughout the app. Use default word-spacing.
+* [X] Set letter-spacing to 0.025em consistently throughout the app. Use default word-spacing.
