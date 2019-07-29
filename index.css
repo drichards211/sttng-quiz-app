@@ -11,6 +11,7 @@ html, body {
   font-weight: normal;
   letter-spacing: 0.025em;
   background: black;
+  min-width: 320px; /* Prevents layout from breaking on extremely small viewports */
 }
 
 /*Removes all default browser styling for legends and fieldsets:*/
@@ -59,6 +60,7 @@ body:not(:-moz-handler-blocked) fieldset {
 
 .score-box {
   box-sizing: border-box;
+  position: relative;
 }
 
 .sb-bracket {
@@ -219,10 +221,49 @@ instead of lcars.css in order to avoid some ":after" effects):
 
 /* MEDIA QUERIES ================================== */
 
-/*for-phone-landscape-up*/
+/*for-very-small-phones that break .score-box layout*/
+@media only screen and (max-width: 359px) { 
+  .sb-content {
+    margin-left: -1rem;
+    width: 100%;
+  }
+  .score-pips, .rank {
+    width: 100%;
+  }
+  .img-box {
+    padding-top: 1.7em;
+  }
+}
+  /*for-phone-landscape-up*/
 @media only screen and (min-width: 600px) { 
   .exam-container, .image-container {
     width: 50%; 
+  }
+}
+/*for-weird-sizes that break score-box layout*/
+@media only screen and (min-width: 600px) and (max-width: 765px) { 
+  .sb-content {
+    margin-left: -1rem;
+    width: 100%;
+  }
+  .score-pips, .rank {
+    width: 100%;
+  }
+  .img-box {
+    padding-top: 1.7em;
+  }
+}
+/*for-weird-sizes that break score-box layout*/
+@media only screen and (min-width: 999px) and (max-width: 1024px) { 
+  .sb-content {
+    margin-left: -1rem;
+    width: 100%;
+  }
+  .score-pips, .rank {
+    width: 100%;
+  }
+  .img-box {
+    padding-top: 1.7em;
   }
 }
 /* for-tablet-landscape-up */
