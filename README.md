@@ -21,5 +21,5 @@ Upcoming features include sound effects for button clicks, correct and incorrect
 * [X] Smooth the transitioning between viewport sizes.
 
 ## a11y:
-* [ ] Increase contrast ratio to AA on all colored text.
+* [X] Increase contrast ratio to AA on all colored text.
 * [X] Set letter-spacing to 0.025em consistently throughout the app. Use default word-spacing.
