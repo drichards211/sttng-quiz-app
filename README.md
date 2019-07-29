@@ -12,7 +12,7 @@ Upcoming features include sound effects for button clicks, correct and incorrect
 * [ ] Fix pips occasionally rendering outside score-box.
 
 ## Style changes:
-* [ ] Improve LCARS font spacing, weight, and legibility.
+* [X] Improve LCARS font spacing, weight, and legibility.
 * [X] Increase #container font-size on larger viewports.
 * [X] Adjust padding on .img-box to match padding in other areas.
 * [ ] Increase sidebar width on larger viewports.
