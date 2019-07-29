@@ -8,10 +8,7 @@ html, body {
   font-family: "LCARS";
   color: #fff;
   font-size: 15px;
-  font-weight: normal;
-  letter-spacing: 0.025em;
   background: black;
-  min-width: 320px; /* Prevents layout from breaking on extremely small viewports */
 }
 
 /*Removes all default browser styling for legends and fieldsets:*/
@@ -60,7 +57,8 @@ body:not(:-moz-handler-blocked) fieldset {
 
 .score-box {
   box-sizing: border-box;
-  position: relative;
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
 }
 
 .sb-bracket {
@@ -74,7 +72,7 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .score-pips, .rank {
-  float: right;
+ float: right;
 }
 
 .pips-img {
@@ -83,8 +81,10 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .img-box {
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
-  padding-top: 2.7em;
+  padding-top: 10%;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -94,6 +94,11 @@ body:not(:-moz-handler-blocked) fieldset {
   display: inline-block;
   max-width: 90%;
   max-height: 20em;
+}
+
+.question-number-answer {
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
 }
 
 .question-number {
@@ -106,6 +111,8 @@ body:not(:-moz-handler-blocked) fieldset {
   font-size: 1.4rem;
   margin-top: 0.1em;
   margin-bottom: 1.5em;
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
 }
 
 .question-box {
@@ -117,21 +124,21 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .correct {
-  color: #3668ff !important; 
+  color: #36c !important; 
   font-size: 195%; 
   margin-top: 0em; 
   margin-bottom: .1em;
 }
 
 .incorrect {
-  color: rgb(222, 23, 23) !important; 
+  color: rgb(201, 17, 17) !important; 
   font-size: 195%; 
   margin-top: 0em; 
   margin-bottom: .1em;
 }
 
 .INLINE-ANSWER {
-  color: #3668ff !important;
+  color: #36c !important;
 }
 
 .dr-orange-text-color {
@@ -143,7 +150,8 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 button {
-  letter-spacing: 0.025em;
+  letter-spacing: 0.025rem;
+  word-spacing: 0.025rem;
 }
 
 .button-start {
@@ -219,75 +227,73 @@ instead of lcars.css in order to avoid some ":after" effects):
   min-height: 3rem;
 }
 
-/* MEDIA QUERIES ================================== */
 
-/*for-very-small-phones that break .score-box layout*/
-@media only screen and (max-width: 359px) { 
-  .sb-content {
-    margin-left: -1rem;
-    width: 100%;
-  }
-  .score-pips, .rank {
-    width: 100%;
-  }
-  .img-box {
-    padding-top: 1.7em;
-  }
+/*for-tiny-phone-only*/
+@media only screen and (max-width: 400px) {
+/* No special settings... uses defaults */
 }
-  /*for-phone-landscape-up*/
-@media only screen and (min-width: 600px) { 
-  .exam-container, .image-container {
+
+/*for-phone-landscape-up*/
+@media only screen and (min-width: 600px) and (orientation: landscape) { 
+  .exam-container {
     width: 50%; 
   }
-}
-/*for-weird-sizes that break score-box layout*/
-@media only screen and (min-width: 600px) and (max-width: 765px) { 
-  .sb-content {
-    margin-left: -1rem;
-    width: 100%;
+  .image-container {
+    width: 50%; 
   }
-  .score-pips, .rank {
-    width: 100%;
-  }
-  .img-box {
-    padding-top: 1.7em;
+  html, body {
+    font-size: 15px;
   }
 }
-/*for-weird-sizes that break score-box layout*/
-@media only screen and (min-width: 999px) and (max-width: 1024px) { 
-  .sb-content {
-    margin-left: -1rem;
-    width: 100%;
-  }
-  .score-pips, .rank {
-    width: 100%;
-  }
-  .img-box {
-    padding-top: 1.7em;
+
+  /*for-tablet-portrait-up*/
+@media only screen and (min-width: 600px) and (orientation: portrait) { 
+  html, body {
+    font-size: 18.5px;
   }
 }
+
+/* Preserves larger font for unusual desktop window size */
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+  html, body {
+    font-size: 18px;
+  }
+}
+
 /* for-tablet-landscape-up */
 @media only screen and (min-width: 1000px) {
-  html, body {
-    font-size: 20px;
+   .exam-container {
+    width: 50%; 
+  }
+  .image-container {
+    width: 50%; 
   }
   .question-number {
     margin-bottom: 1em;
   } 
-}
-/* for-desktop-up */
-@media only screen and (min-width: 1200px) {
+   .img-box {
+    margin-top: 2rem; 
+    padding-top: 0%;
+  }
   html, body {
     font-size: 20px;
   }
-  .question-number-answer, .question-box, .answer {
-    max-width: 34vw;
-    margin-left: auto;
+}
+
+/* for-desktop-up */
+@media only screen and (min-width: 1200px) {
+  .image-container {
+    padding-right: 5%;
   }
-  .score-box, .img-box {
-    max-width: 34vw;
+   .img-box {
+    padding-top: 10%;
+    padding-right: 5%;
+  }
+  html, body {
+    font-size: 20px;
   }
 }
+
 /* for-big-desktop-up */
 @media only screen and (min-width: 1800px) {
   html, body {

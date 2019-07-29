@@ -174,7 +174,7 @@ function formatImage(which) {
     return `<div class="score-box">
       <div class="sb-bracket lcars-bracket top hollow">
         <div class="sb-content"></div>  
-      </div>&nbsp&nbsp
+      </div>&nbsp
         <div class="sb-bracket lcars-bracket bottom hollow"></div>
     </div>
       <div class="img-box">
@@ -226,7 +226,7 @@ function renderNewQuestion() {
   $(".sb-content").html(
     `<p class="score">SCORE ${
       score.points
-    }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">${score.pipsImg()}</p>`
+    }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">&nbsp${score.pipsImg()}</p>`
   );
 }
 
@@ -239,7 +239,7 @@ function renderAnswer(answer) {
   $(".sb-content").html(
     `<p class="score">SCORE ${
       score.points
-    }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">${score.pipsImg()}</p>`
+    }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">&nbsp${score.pipsImg()}</p>`
   );
   //Render CORRECT or INCORRECT message:
   if (answer === "correct") {
@@ -289,7 +289,7 @@ function renderFinalScore() {
   $(".sb-content").html(
     `<p class"score"=>SCORE ${
       score.points
-    }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">${score.pipsImg()}</p>`
+    }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">&nbsp${score.pipsImg()}</p>`
   );
 }
 
