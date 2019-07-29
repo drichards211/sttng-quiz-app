@@ -8,6 +8,7 @@ html, body {
   font-family: "LCARS";
   color: #fff;
   font-size: 15px;
+  letter-spacing: 0.025em;
   background: black;
 }
 
@@ -57,8 +58,6 @@ body:not(:-moz-handler-blocked) fieldset {
 
 .score-box {
   box-sizing: border-box;
-  letter-spacing: 0.025rem;
-  word-spacing: 0.025rem;
 }
 
 .sb-bracket {
@@ -72,7 +71,7 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .score-pips, .rank {
- float: right;
+  float: right;
 }
 
 .pips-img {
@@ -81,8 +80,6 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .img-box {
-  /* margin-left: auto;
-  margin-right: auto; */
   box-sizing: border-box;
   padding-top: 2.7em;
   text-align: center;
@@ -96,11 +93,6 @@ body:not(:-moz-handler-blocked) fieldset {
   max-height: 20em;
 }
 
-.question-number-answer {
-  letter-spacing: 0.025rem;
-  word-spacing: 0.025rem;
-}
-
 .question-number {
   margin-top: 0em !important;
   margin-bottom: .75em;
@@ -111,8 +103,6 @@ body:not(:-moz-handler-blocked) fieldset {
   font-size: 1.4rem;
   margin-top: 0.1em;
   margin-bottom: 1.5em;
-  letter-spacing: 0.025rem;
-  word-spacing: 0.025rem;
 }
 
 .question-box {
@@ -150,8 +140,7 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 button {
-  letter-spacing: 0.025rem;
-  word-spacing: 0.025rem;
+  letter-spacing: 0.025em;
 }
 
 .button-start {
