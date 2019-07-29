@@ -115,21 +115,21 @@ body:not(:-moz-handler-blocked) fieldset {
 }
 
 .correct {
-  color: #36c !important; 
+  color: #3668ff !important; 
   font-size: 195%; 
   margin-top: 0em; 
   margin-bottom: .1em;
 }
 
 .incorrect {
-  color: rgb(201, 17, 17) !important; 
+  color: rgb(222, 23, 23) !important; 
   font-size: 195%; 
   margin-top: 0em; 
   margin-bottom: .1em;
 }
 
 .INLINE-ANSWER {
-  color: #36c !important;
+  color: #3668ff !important;
 }
 
 .dr-orange-text-color {
