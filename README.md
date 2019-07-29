@@ -9,7 +9,7 @@ Upcoming features include sound effects for button clicks, correct and incorrect
 
 ## Bugfixes:
 * [X] Legend text doesn't correctly "text-align: right" in Firefox.
-* [ ] Fix pips occasionally rendering outside score-box.
+* [X] Fix pips occasionally rendering outside score-box.
 
 ## Style changes:
 * [X] Improve LCARS font spacing, weight, and legibility.
