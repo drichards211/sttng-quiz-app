@@ -1768,7 +1768,7 @@ width: 119.875rem;
 /* DR MEDIA QUERIES ================================== */
 
 /*for-very-small-phones that break .score-box layout*/
-@media only screen and (max-width: 359px) { 
+@media only screen and (max-width: 364px) { 
   .lcars-bracket.bottom {
     position: absolute;
     width: 100%;

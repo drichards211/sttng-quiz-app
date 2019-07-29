@@ -222,7 +222,7 @@ instead of lcars.css in order to avoid some ":after" effects):
 /* MEDIA QUERIES ================================== */
 
 /*for-very-small-phones that break .score-box layout*/
-@media only screen and (max-width: 359px) { 
+@media only screen and (max-width: 364px) { 
   .sb-content {
     margin-left: -1rem;
     width: 100%;
