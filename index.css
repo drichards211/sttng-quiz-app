@@ -8,6 +8,7 @@ html, body {
   font-family: "LCARS";
   color: #fff;
   font-size: 15px;
+  font-weight: normal;
   letter-spacing: 0.025em;
   background: black;
 }
