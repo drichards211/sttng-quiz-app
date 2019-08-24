@@ -5,75 +5,85 @@
   <title>Star Trek: The Next Generation--Officers' Exam</title>
   <meta name="description" content="Quiz game based on Star Trek: The Next Generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STYLESHEETS ========================================= -->
   <!-- Normalize.css, cross-browser reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css"/>
   <!-- Main style sheet -->
   <link rel="stylesheet" href="./index.css"/>
   <!-- LCARS, Star Trek: TNG specific styling -->
   <link rel="stylesheet" href="./lcars.css"/>
+  <!-- SCRIPTS ============================================= -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="quizdata.js"></script>
+  <!-- FAVICON MANAGEMENT ================================== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	<div class="lcars-app-container">
+  <div class="lcars-app-container">
 
-		<!-- HEADER =================================================== -->
+    <!-- HEADER =================================================== -->
 
-		<header id="header" class="lcars-row header" role="banner">
+    <header id="header" class="lcars-row header" role="banner">
 
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-bottom"></div>
+      <!-- ELBOW -->
+      <div class="lcars-elbow left-bottom"></div>
 
-			<!-- BAR WITH TITLE -->
-			<div class="lcars-bar horizontal">
-				<div class="lcars-title right lcars-atomic-tangerine-color">OFFICERS' EXAM</div>
-			</div>
+      <!-- BAR WITH TITLE -->
+      <div class="lcars-bar horizontal">
+        <div class="lcars-title right lcars-atomic-tangerine-color">OFFICERS' EXAM</div>
+      </div>
 
-			<!-- ROUNDED EDGE DECORATED -->
-			<div class="lcars-bar horizontal right-end decorated lcars-pale-canary-bg"></div>
+      <!-- ROUNDED EDGE DECORATED -->
+      <div class="lcars-bar horizontal right-end decorated lcars-pale-canary-bg"></div>
 
-		</header>
+    </header>
 
-		<!-- SIDE MENU ================================================= -->
+    <!-- SIDE MENU ================================================= -->
 
-		<div id="left-menu" class="lcars-column start-space lcars-u-1">
+    <div id="left-menu" class="lcars-column start-space lcars-u-1">
 
-			<!-- FILLER -->
-			<div class="lcars-bar-0 lcars-u-1"></div>
-			<div class="lcars-bar-1 lcars-u-1"></div>
-			<div class="lcars-bar-2 lcars-u-1"></div>
-			<div class="lcars-bar-3 lcars-u-1"></div>
-		</div>
+      <!-- FILLER -->
+      <div class="lcars-bar-0 lcars-u-1"></div>
+      <div class="lcars-bar-1 lcars-u-1"></div>
+      <div class="lcars-bar-2 lcars-u-1"></div>
+      <div class="lcars-bar-3 lcars-u-1"></div>
+    </div>
 
-		<!-- FOOTER ==================================================== -->
+    <!-- FOOTER ==================================================== -->
 
-		<div id="footer" class="lcars-row">
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-top start-space lcars-indigo-bg"></div>
-			<!-- BAR -->
-			<div class="lcars-bar horizontal both-divider bottom lcars-indigo-bg"></div>
-			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal right-end decorated left-divider bottom lcars-melrose-bg"></div>
-		</div>
+    <div id="footer" class="lcars-row">
+      <!-- ELBOW -->
+      <div class="lcars-elbow left-top start-space lcars-indigo-bg"></div>
+      <!-- BAR -->
+      <div class="lcars-bar horizontal both-divider bottom lcars-indigo-bg"></div>
+      <!-- ROUNDED EDGE -->
+      <div class="lcars-bar horizontal right-end decorated left-divider bottom lcars-melrose-bg"></div>
+    </div>
 
-		<!-- MAIN CONTAINER ============================================= -->
-		<main id="container" role="main" aria-live="assertive">
-			<!-- COLUMN LAYOUT -->
-			<div class="exam-container">
-					<h1>STAR TREK:<br>THE NEXT GENERATION</h1>
-					<h2>DO YOU HAVE WHAT IT TAKES TO BECOME A STARFLEET ADMIRAL?<br>TAKE THE OFFICERS' EXAM AND FIND OUT</h2>
-					<form class="question-box">
-						<button type="button" class="button-start lcars-element button rounded">START</button>
-					</form>
+    <!-- MAIN CONTAINER ============================================= -->
+    <main id="container" role="main" aria-live="assertive">
+      <!-- COLUMN LAYOUT -->
+      <div class="exam-container">
+          <h1>STAR TREK:<br>THE NEXT GENERATION</h1>
+          <h2>DO YOU HAVE WHAT IT TAKES TO BECOME A STARFLEET ADMIRAL?<br>TAKE THE OFFICERS' EXAM AND FIND OUT</h2>
+          <form class="question-box">
+            <button type="button" class="button-start lcars-element button rounded">START</button>
+          </form>
       </div>
       <div class="image-container" aria-live="polite">
-				<div class="score-box"></div>
-				<div class="img-box"></div>
-			</div>
-		</main>
-		
-	  <!-- Local JavaScript files and remote jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="quizdata.js"></script>			
-	</div>
+        <div class="score-box"></div>
+        <div class="img-box"></div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
