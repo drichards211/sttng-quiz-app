@@ -846,6 +846,7 @@ height: 1.5rem;
 border-bottom-left-radius: 1.5rem;
 border-bottom-right-radius: 1.5rem;
 border-width: 0 0.75rem 0.25rem 0.75rem;
+z-index: -1; /*DR*/
 }
 .lcars-bracket.hollow {
 background-color: #000;
@@ -1767,24 +1768,6 @@ width: 119.875rem;
 
 /* DR MEDIA QUERIES ================================== */
 
-/*for-very-small-phones that break .score-box layout*/
-@media only screen and (max-width: 364px) { 
-  .lcars-bracket.bottom {
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    z-index: -1;
-  }
-}
-/*for-weird-sizes that break .score-box layout*/
-@media only screen and (min-width: 600px) and (max-width: 765px) { 
-  .lcars-bracket.bottom {
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    z-index: -1;
-  }
-}
 /* for-tablet-portrait-up */
 @media only screen and (min-width: 700px) and (orientation: portrait) {
   .lcars-app-container #header, .lcars-app-container #left-menu, .lcars-app-container #footer {
@@ -1796,15 +1779,6 @@ width: 119.875rem;
   }
   .lcars-column.start-space {
     margin-top: 1em;
-  }
-}
-/*for-weird-sizes that break score-box layout*/
-@media only screen and (min-width: 999px) and (max-width: 1024px) { 
-  .lcars-bracket.bottom {
-    position: absolute;
-    width: 100%;
-    top: 94px;
-    z-index: -1;
   }
 }
 /* for-tablet-landscape-up */

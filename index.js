@@ -2,7 +2,7 @@ let questionNum = 0;
 
 let score = {
   points: 0,
-  rank: function() {
+  rank: function () {
     //returns officer rank, as determined by current points:
     const rankOrder = [
       "Crewman",
@@ -19,7 +19,7 @@ let score = {
     ];
     return rankOrder[this.points].toUpperCase();
   },
-  pipsImg: function() {
+  pipsImg: function () {
     //returns formatted collar pips image, as determined by current points:
     const pips = [
       "None",
@@ -37,12 +37,12 @@ let score = {
     if (this.points > 2) {
       return `<img src="./img/${
         pips[this.points]
-      }" alt="Picture of rank collar pips" class="pips-img">`;
+        }" alt="Picture of rank collar pips" class="pips-img">`;
     } else {
       return "";
     }
   },
-  crewImg: function() {
+  crewImg: function () {
     //returns formatted rank image for final score, as determined by current points:
     const crew = [
       {
@@ -111,7 +111,7 @@ let score = {
       <div class="img-box">
         <img src="./img/${crew[this.points].rankImg}" alt="${
       crew[this.points].altText
-    }" class="image"></div>
+      }" class="image"></div>
     </div>`;
   }
 };
@@ -124,21 +124,21 @@ function formatQuestion() {
     <form class="question-box">
       <fieldset>
         <legend class="question">${questions[
-          questionNum
-        ].question.toUpperCase()}</legend>
+      questionNum
+    ].question.toUpperCase()}</legend>
         <div class="lcars-column">
           <button type="button" class="button-answer lcars-element button lcars-u-2-1-dr rounded" value="0">${questions[
-            questionNum
-          ].answers[0].toUpperCase()}</button>
+      questionNum
+    ].answers[0].toUpperCase()}</button>
           <button type="button" class="button-answer lcars-element button lcars-u-2-1-dr rounded" value="1">${questions[
-            questionNum
-          ].answers[1].toUpperCase()}</button>
+      questionNum
+    ].answers[1].toUpperCase()}</button>
           <button type="button" class="button-answer lcars-element button lcars-u-2-1-dr rounded" value="2">${questions[
-            questionNum
-          ].answers[2].toUpperCase()}</button>
+      questionNum
+    ].answers[2].toUpperCase()}</button>
           <button type="button" class="button-answer lcars-element button lcars-u-2-1-dr rounded" value="3">${questions[
-            questionNum
-          ].answers[3].toUpperCase()}</button>
+      questionNum
+    ].answers[3].toUpperCase()}</button>
         </div>
       </fieldset>
     </form>`;
@@ -167,7 +167,7 @@ function formatImage(which) {
       <div class="img-box">
       <img src="./img/${questions[questionNum].questionImg}" alt="${
       questions[questionNum].questionAlt
-    }" class="image"></div>
+      }" class="image"></div>
     </div>`;
   }
   if (which === "answer") {
@@ -180,14 +180,14 @@ function formatImage(which) {
       <div class="img-box">
       <img src="./img/${questions[questionNum].answerImg}" alt="${
       questions[questionNum].answerAlt
-    }" class="image"></div>
+      }" class="image"></div>
     </div>`;
   }
 }
 
 function handleUserNav() {
   // When user clicks START or RESTART button:
-  $(".exam-container").on("click", ".button-start, .button-restart", function(
+  $(".exam-container").on("click", ".button-start, .button-restart", function (
     event
   ) {
     questionNum = 0;
@@ -195,19 +195,19 @@ function handleUserNav() {
     renderNewQuestion();
   });
   // When user clicks NEXT button:
-  $(".exam-container").on("click", ".button-next", function(event) {
+  $(".exam-container").on("click", ".button-next", function (event) {
     questionNum++;
     renderNewQuestion();
   });
   // When user clicks RESULTS button:
-  $(".exam-container").on("click", ".button-results", function(event) {
+  $(".exam-container").on("click", ".button-results", function (event) {
     renderFinalScore();
   });
 }
 
 function handleUserAnswers() {
   //When user clicks on answer-button inside .exam-container:
-  $(".exam-container").on("click", ".button-answer", function(event) {
+  $(".exam-container").on("click", ".button-answer", function (event) {
     if ($(this).val() === questions[questionNum].correctAnswerIndex) {
       score.points++;
       renderAnswer("correct");
@@ -225,9 +225,10 @@ function renderNewQuestion() {
   //Render current score, rank, and pips to .sb-content:
   $(".sb-content").html(
     `<p class="score">SCORE ${
-      score.points
+    score.points
     }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">&nbsp${score.pipsImg()}</p>`
   );
+  handleScoreBoxSize();
 }
 
 function renderAnswer(answer) {
@@ -238,9 +239,10 @@ function renderAnswer(answer) {
   //Render current score, rank, and pips to .sb-content:
   $(".sb-content").html(
     `<p class="score">SCORE ${
-      score.points
+    score.points
     }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">&nbsp${score.pipsImg()}</p>`
   );
+  handleScoreBoxSize();
   //Render CORRECT or INCORRECT message:
   if (answer === "correct") {
     $(".answer-type").html(
@@ -270,7 +272,7 @@ function renderFinalScore() {
   if (score.points <= 2) {
     $(".exam-container").html(`<h2 class="congrats">YOU SCORED ${
       score.points
-    } OUT OF 10 POINTS<br><br>
+      } OUT OF 10 POINTS<br><br>
       YOU HAVE ATTAINED THE RANK OF STARFLEET ${score.rank()}</h2>
       <form class="question-box">
       <button type="button" class="button-restart lcars-element button rounded">RESTART</button>
@@ -288,9 +290,10 @@ function renderFinalScore() {
   //Render current score, rank, and pips to .sb-content:
   $(".sb-content").html(
     `<p class"score"=>SCORE ${
-      score.points
+    score.points
     }/10</p><p class="rank">\xa0 RANK: ${score.rank()}</p><p class="score-pips">&nbsp${score.pipsImg()}</p>`
   );
+  handleScoreBoxSize();
 }
 
 function blink() {
@@ -311,7 +314,48 @@ function fadeIn() {
   $(".fade_in").fadeIn(1400);
 }
 
-$(function() {
+function handleScoreBoxSize() {
+  //On certain viewports, pips images can cause text to overflow the scorebox.
+  //Expand the scorebox (and put pips on their own line) if the viewport matches
+  //and the pips are displayed:
+  let mediaQuery = [
+    window.matchMedia("(max-width: 364px)"),
+    window.matchMedia("(min-width: 600px) and (max-width: 765px)"),
+    window.matchMedia("(min-width: 999px) and (max-width: 1024px)"),
+    window.matchMedia("(min-width: 999px) and (max-width: 1024px)"),
+  ];
+  let resizer = function () {
+    if ((score.points > 2) && ((mediaQuery[0].matches) || (mediaQuery[1].matches) || (mediaQuery[2].matches)
+      || (mediaQuery[3].matches))) {
+      $('.sb-content').css({ 'margin-left': '-1rem', 'width': '100%' });
+      $('.score-pips, .rank').css('width', '100%');
+      $('.img-box').css('padding-top', '1.7em');
+      $('.lcars-bracket.bottom').css({
+        'position': 'absolute',
+        'width': '100%',
+        'top': '70px',
+      });
+      if (mediaQuery[3].matches) {
+        $('.lcars-bracket.bottom').css('top', '94px');
+      }
+    } else {
+      $('.sb-content').css({ 'margin-left': '1rem', 'width': 'auto' });
+      $('.score-pips, .rank').css('width', 'auto');
+      $('.img-box').css('padding-top', '2.7em');
+      $('.lcars-bracket.bottom').css({
+        'position': 'static',
+        'width': 'auto',
+      });
+    }
+  };
+  resizer();
+}
+
+window.addEventListener('resize', () => {
+  handleScoreBoxSize();
+})
+
+$(function () {
   handleUserNav();
   handleUserAnswers();
 });

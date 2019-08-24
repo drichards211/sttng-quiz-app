@@ -221,49 +221,10 @@ instead of lcars.css in order to avoid some ":after" effects):
 
 /* MEDIA QUERIES ================================== */
 
-/*for-very-small-phones that break .score-box layout*/
-@media only screen and (max-width: 364px) { 
-  .sb-content {
-    margin-left: -1rem;
-    width: 100%;
-  }
-  .score-pips, .rank {
-    width: 100%;
-  }
-  .img-box {
-    padding-top: 1.7em;
-  }
-}
-  /*for-phone-landscape-up*/
+/*for-phone-landscape-up*/
 @media only screen and (min-width: 600px) { 
   .exam-container, .image-container {
     width: 50%; 
-  }
-}
-/*for-weird-sizes that break score-box layout*/
-@media only screen and (min-width: 600px) and (max-width: 765px) { 
-  .sb-content {
-    margin-left: -1rem;
-    width: 100%;
-  }
-  .score-pips, .rank {
-    width: 100%;
-  }
-  .img-box {
-    padding-top: 1.7em;
-  }
-}
-/*for-weird-sizes that break score-box layout*/
-@media only screen and (min-width: 999px) and (max-width: 1024px) { 
-  .sb-content {
-    margin-left: -1rem;
-    width: 100%;
-  }
-  .score-pips, .rank {
-    width: 100%;
-  }
-  .img-box {
-    padding-top: 1.7em;
   }
 }
 /* for-tablet-landscape-up */
