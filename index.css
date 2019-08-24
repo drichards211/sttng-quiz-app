@@ -215,8 +215,8 @@ instead of lcars.css in order to avoid some ":after" effects):
 .lcars-u-2-1-dr { /*DR*/
   width: 14.25rem;
   min-width: 14.25rem;
-  height: 3rem;
-  min-height: 3rem;
+  height: 2.5rem;
+  min-height: 2.5rem;
 }
 
 /* MEDIA QUERIES ================================== */

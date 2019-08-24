@@ -653,7 +653,7 @@ font-size: 1.4rem;
 color: #000;
 text-align: right;
 background: #fc6;
-height: 3rem;
+height: 2.5rem; /*3rem*/
 width: 7.5rem;
 box-sizing: border-box;
 padding-left: 0.75rem;
