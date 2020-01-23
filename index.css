@@ -9,7 +9,7 @@ html, body {
   color: #fff;
   font-size: 15px;
   font-weight: normal;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.035em;
   background: black;
   min-width: 320px; /* Prevents layout from breaking on extremely small viewports */
 }
